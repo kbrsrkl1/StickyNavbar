@@ -64,3 +64,9 @@
 .navbar.active ul li a{
     color: white;
 }
+
+
+.text{
+    margin: 50px 5%;
+    font-family: sans-serif;
+}
