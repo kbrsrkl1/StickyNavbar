@@ -4,6 +4,8 @@ const bottomEl = document.querySelector(".bottom")
 
 console.log(bottomEl.offsetTop)
 
+
+
 window.addEventListener("scroll", ()=> {
     if(
         window.scrollY > bottomEl.offsetTop - navbarEl.offsetHeight - 50
