@@ -1,5 +1,18 @@
 const navbarEl = document.querySelector(".navbar");
+const bottomEl = document.querySelector(".bottom")
+
+
+console.log(bottomEl.offsetTop)
+
+
 
 window.addEventListener("scroll", ()=> {
-    console.log(window.scrollY);
+    if(
+        window.scrollY > bottomEl.offsetTop - navbarEl.offsetHeight - 50
+    ){
+        navbarEl.classList.add("active");
+    } else {
+        navbarEl.classList.remove("active")
+    }
 });
+
